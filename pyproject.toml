@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+pythonpath = [
+  "."
+]
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+[tool.ruff]
+line-length = 88
