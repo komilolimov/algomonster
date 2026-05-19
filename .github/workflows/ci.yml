@@ -44,4 +44,4 @@ jobs:
     # 6. Запуск изолированных тестов (Pytest)
     - name: Test with pytest
       run: |
-        pytest tests/
+        pytest src/tests/
