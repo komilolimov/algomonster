@@ -17,5 +17,5 @@ from src.binary_search.bigger_target import first_not_smaller
         ([], 3, -1),
     ],
 )
-def test_first_not_smaller(arr: list[int], target: int, expected: int):
+def test_first_not_smaller(arr: list[int], target: int, expected: int) -> None:
     assert first_not_smaller(arr, target) == expected

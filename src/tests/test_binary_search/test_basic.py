@@ -16,5 +16,5 @@ from src.binary_search.basic import binary_search
         ([-10, -5, 0, 5, 10], -5, 1),
     ],
 )
-def test_binary_search(arr: list[int], target: int, expected: int):
+def test_binary_search(arr: list[int], target: int, expected: int) -> None:
     assert binary_search(arr, target) == expected
