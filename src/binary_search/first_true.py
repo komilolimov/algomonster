@@ -10,4 +10,4 @@ def find_boundary(arr: list[bool]) -> int:
         else:
             left = mid + 1
 
-    return boundary_index
+    return boundary_index
