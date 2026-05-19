@@ -15,3 +15,5 @@ def binary_search(arr: List[int], target: int) -> int:
             right = mid - 1
 
     return -1
+
+    
