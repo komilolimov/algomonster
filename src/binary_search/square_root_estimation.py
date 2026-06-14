@@ -11,9 +11,6 @@
 # Explanation: square root of 8 is 2.83..., return the integer part, 2
 
 
-
-
-
 def square_root(n: int) -> int:
     left, right = 0, n
     boundary_index = -1

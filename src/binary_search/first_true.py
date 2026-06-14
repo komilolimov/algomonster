@@ -9,7 +9,6 @@ from typing import List
 # Explanation: The first true's index is 2.
 
 
-
 def find_boundary(arr: List[bool]) -> int:
     left, right = 0, len(arr) - 1
     boundary_index = -1

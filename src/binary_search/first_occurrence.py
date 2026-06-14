@@ -19,7 +19,8 @@ from typing import List
 
 # Explanation: 6 does not exist in the array.
 
-def find_first_occurrence(arr: List[int],  target: int) -> int:
+
+def find_first_occurrence(arr: List[int], target: int) -> int:
     left, right = 0, len(arr) - 1
     first_occurrence = -1
     while left <= right:

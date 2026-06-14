@@ -19,7 +19,6 @@ from typing import List
 # Explanation: 6 does not exist in the array.
 
 
-
 def first_not_smaller(arr: List[int], target: int) -> int:
     left, right = 0, len(arr) - 1
     ans = -1
