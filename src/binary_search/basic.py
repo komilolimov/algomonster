@@ -1,5 +1,6 @@
 from typing import List
 
+# basic binary search algorithm
 
 def binary_search(arr: List[int], target: int) -> int:
     left, right = 0, len(arr) - 1
