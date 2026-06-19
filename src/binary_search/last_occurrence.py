@@ -4,6 +4,7 @@ from typing import List
 # arr = [1, 3, 3, 3, 3, 6, 10, 10, 10, 100]
 # target = 3
 
+
 def last_occurrence(arr: List[int], target: int) -> int:
     left, right = 0, len(arr) - 1
     boundary_index = -1
