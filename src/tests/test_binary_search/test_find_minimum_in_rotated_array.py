@@ -1,6 +1,7 @@
 import unittest
 from find_minimum_in_rotated_array import findMin
 
+
 class TestFindMinInRotatedArray(unittest.TestCase):
     def test_example1(self):
         # The original array was [1,2,3,4,5] rotated 3 times.
@@ -14,5 +15,6 @@ class TestFindMinInRotatedArray(unittest.TestCase):
         # The original array was [11,13,15,17] and it was rotated 4 times.
         self.assertEqual(findMin([11, 13, 15, 17]), 11)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     unittest.main()

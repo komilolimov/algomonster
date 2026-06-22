@@ -12,18 +12,17 @@ from typing import List
 # You must write an algorithm that runs in O(log n) time.
 
 
-
 def findMin(nums: List[int]) -> int:
     left, right = 0, len(nums) - 1
-    
+
     while left < right:
         mid = (left + right) // 2
-        
+
         if nums[mid] > nums[right]:
             # Minimum must be in the right half, excluding mid
             left = mid + 1
         else:
             # Minimum is in the left half, including mid
             right = mid
-            
+
     return nums[left]
