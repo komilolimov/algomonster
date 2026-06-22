@@ -1,5 +1,5 @@
 import unittest
-from find_minimum_in_rotated_array import findMin
+from src.binary_search.find_minimum_in_rotated_array import findMin
 
 
 class TestFindMinInRotatedArray(unittest.TestCase):
