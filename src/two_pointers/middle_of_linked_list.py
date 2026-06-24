@@ -15,6 +15,6 @@
 def find_middle_of_linked_list(head):
     slow = fast = head
     while fast and fast.next:
-      fast = fast.next.next
-      slow = slow.next
+        fast = fast.next.next
+        slow = slow.next
     return slow.value
