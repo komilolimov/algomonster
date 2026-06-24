@@ -1,14 +1,9 @@
 import pytest
-from src.two_pointers.middle_of_linked_list import find_middle_of_linked_list
+from typing import List, Optional
+from src.two_pointers.middle_of_linked_list import find_middle_of_linked_list, Node
 
 
-class Node:
-    def __init__(self, value, next=None):
-        self.value = value
-        self.next = next
-
-
-def build_linked_list(values):
+def build_linked_list(values: List[int]) -> Optional[Node]:
     if not values:
         return None
     head = Node(values[0])
@@ -26,6 +21,6 @@ def build_linked_list(values):
         ([1, 2, 3, 4, 5, 6], 4),
     ],
 )
-def test_find_middle_of_linked_list(input_values, expected):
+def test_find_middle_of_linked_list(input_values: List[int], expected: int) -> None:
     head = build_linked_list(input_values)
     assert find_middle_of_linked_list(head) == expected

@@ -12,9 +12,22 @@
 # Output: 3
 
 
-def find_middle_of_linked_list(head):
-    slow = fast = head
+from typing import Optional
+
+
+class Node:
+    def __init__(self, value: int, next: Optional["Node"] = None) -> None:
+        self.value = value
+        self.next = next
+
+
+def find_middle_of_linked_list(head: Optional[Node]) -> int:
+    slow: Optional[Node] = head
+    fast: Optional[Node] = head
     while fast and fast.next:
         fast = fast.next.next
-        slow = slow.next
-    return slow.value
+        if slow and slow.next:
+            slow = slow.next
+    if slow:
+        return slow.value
+    return -1
