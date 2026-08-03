@@ -6,10 +6,9 @@
 
 # For example, if the input is nums = [1, 2, 3, 7, 4, 1], k = 3, then the output would be 14 as the largest length 3 subarray sum is given by [3, 7, 4] which sums to 14.
 
-from typing import List
 
 
-def subarray_sum_fixed(nums: List[int], k: int) -> int:
+def subarray_sum_fixed(nums: list[int], k: int) -> int:
     window_sum = sum(nums[:k])
     max_sum = window_sum
     for i in range(k, len(nums)):

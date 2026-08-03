@@ -4,7 +4,7 @@ from src.two_pointers.index_of_first_occurrence_in_string import strStr
 
 
 @pytest.mark.parametrize(
-    "haystack, needle, expected",
+    ("haystack", "needle", "expected"),
     [
         ("sadbutsad", "sad", 0),
         ("leetcode", "leeto", -1),

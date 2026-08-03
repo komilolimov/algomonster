@@ -1,4 +1,3 @@
-from typing import List
 
 # Given a sorted array of integers and a target integer, find the first occurrence of the target and return its index. Return -1 if the target is not in the array.
 
@@ -19,7 +18,7 @@ from typing import List
 # Explanation: 6 does not exist in the array.
 
 
-def first_not_smaller(arr: List[int], target: int) -> int:
+def first_not_smaller(arr: list[int], target: int) -> int:
     left, right = 0, len(arr) - 1
     ans = -1
     while left <= right:

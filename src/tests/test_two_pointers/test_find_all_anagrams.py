@@ -1,9 +1,10 @@
 import pytest
+
 from src.two_pointers.find_all_anagrams import find_all_anagrams
 
 
 @pytest.mark.parametrize(
-    "original, check, expected",
+    ("original", "check", "expected"),
     [
         ("cbaebabacd", "abc", [0, 6]),
         ("abab", "ab", [0, 1, 2]),

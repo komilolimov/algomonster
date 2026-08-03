@@ -34,11 +34,10 @@
 
 
 
-from typing import List
 
 
 class Solution:
-    def peakIndexInMountainArray(self, arr: List[int]) -> int:
+    def peakIndexInMountainArray(self, arr: list[int]) -> int:
         left, right = 0, len(arr) - 1
         while left < right:
             mid = left + (right - left) // 2

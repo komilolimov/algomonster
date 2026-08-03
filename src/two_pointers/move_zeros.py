@@ -9,10 +9,9 @@
 # [1, 2, 7, 0, 0, 0]
 
 
-from typing import List
 
 
-def move_zeros(nums: List[int]) -> None:
+def move_zeros(nums: list[int]) -> None:
     slow = 0
     for fast in range(len(nums)):
         if nums[fast] != 0:

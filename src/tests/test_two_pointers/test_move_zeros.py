@@ -4,7 +4,7 @@ from src.two_pointers.move_zeros import move_zeros
 
 
 @pytest.mark.parametrize(
-    "nums, expected",
+    ("nums", "expected"),
     [
         ([1, 0, 2, 0, 0, 7], [1, 2, 7, 0, 0, 0]),
         ([0], [0]),

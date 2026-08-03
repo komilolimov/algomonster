@@ -1,11 +1,11 @@
 import pytest
+
 from src.two_pointers.remove_duplicates import remove_duplicates
 
 
 @pytest.mark.parametrize(
-    "arr, expected",
+    ("arr", "expected"),
     [
-        ([0, 0, 1, 1, 1, 2, 2], 3),
         ([0, 0, 1, 1, 1, 2, 2], 3),
         ([1, 2, 3, 4, 5], 5),
         ([1, 1, 1, 1, 1], 1),

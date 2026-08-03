@@ -1,9 +1,8 @@
-from typing import List
 
 # basic binary search algorithm
 
 
-def binary_search(arr: List[int], target: int) -> int:
+def binary_search(arr: list[int], target: int) -> int:
     left, right = 0, len(arr) - 1
 
     while left <= right:

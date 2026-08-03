@@ -6,4 +6,4 @@
 
 from src.two_pointers.three_sum import three_sum, threeSum
 
-__all__ = ["three_sum", "threeSum"]
+__all__ = ["threeSum", "three_sum"]

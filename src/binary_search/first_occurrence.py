@@ -1,5 +1,3 @@
-from typing import List
-
 
 # Given a sorted array of integers and a target integer, find the first occurrence of the target and return its index. Return -1 if the target is not in the array.
 
@@ -20,7 +18,7 @@ from typing import List
 # Explanation: 6 does not exist in the array.
 
 
-def find_first_occurrence(arr: List[int], target: int) -> int:
+def find_first_occurrence(arr: list[int], target: int) -> int:
     left, right = 0, len(arr) - 1
     first_occurrence = -1
     while left <= right:

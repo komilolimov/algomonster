@@ -1,9 +1,10 @@
 import pytest
+
 from src.binary_search.bigger_target import first_not_smaller
 
 
 @pytest.mark.parametrize(
-    "arr, target, expected",
+    ("arr", "target", "expected"),
     [
         ([1, 3, 3, 5, 8, 8, 10], 2, 1),
         ([1, 3, 3, 5, 8, 8, 10], 8, 4),

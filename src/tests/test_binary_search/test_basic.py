@@ -1,9 +1,10 @@
 import pytest
+
 from src.binary_search.basic import binary_search
 
 
 @pytest.mark.parametrize(
-    "arr, target, expected",
+    ("arr", "target", "expected"),
     [
         ([1, 2, 3, 4, 5], 3, 2),
         ([1, 2, 3, 4, 5], 1, 0),

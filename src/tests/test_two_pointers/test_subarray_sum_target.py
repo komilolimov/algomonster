@@ -4,7 +4,7 @@ from src.two_pointers.subarray_sum_target import subarray_sum, subarray_sum_targ
 
 
 @pytest.mark.parametrize(
-    "arr, target, expected",
+    ("arr", "target", "expected"),
     [
         ([1, -20, -3, 30, 5, 4], 7, [1, 4]),
         ([1, 2, 3, 4], 6, [0, 3]),
@@ -22,7 +22,7 @@ def test_subarray_sum(arr: list[int], target: int, expected: list[int]) -> None:
 
 
 @pytest.mark.parametrize(
-    "arr, target, expected",
+    ("arr", "target", "expected"),
     [
         ([1, -20, -3, 30, 5, 4], 7, [1, 4]),
         ([3, 4, 7, 2, -3], 7, [0, 2]),

@@ -1,4 +1,5 @@
 import pytest
+
 from src.binary_search.peak_mountain import (
     Solution,
     peak_index_in_mountain_array,
@@ -7,7 +8,7 @@ from src.binary_search.peak_mountain import (
 
 
 @pytest.mark.parametrize(
-    "arr, expected",
+    ("arr", "expected"),
     [
         ([0, 1, 0], 1),
         ([0, 2, 1, 0], 1),

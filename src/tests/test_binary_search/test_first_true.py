@@ -1,9 +1,10 @@
 import pytest
+
 from src.binary_search.first_true import find_boundary
 
 
 @pytest.mark.parametrize(
-    "arr, expected",
+    ("arr", "expected"),
     [
         ([False, False, True, True, True], 2),
         ([True, True, True], 0),

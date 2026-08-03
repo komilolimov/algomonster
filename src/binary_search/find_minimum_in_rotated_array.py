@@ -1,4 +1,3 @@
-from typing import List
 
 # 153. Find Minimum in Rotated Sorted Array
 # Suppose an array of length n sorted in ascending order is rotated between 1 and n times. For example, the array nums = [0,1,2,4,5,6,7] might become:
@@ -12,7 +11,7 @@ from typing import List
 # You must write an algorithm that runs in O(log n) time.
 
 
-def findMin(nums: List[int]) -> int:
+def findMin(nums: list[int]) -> int:
     left, right = 0, len(nums) - 1
 
     while left < right:

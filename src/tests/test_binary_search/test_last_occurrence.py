@@ -1,9 +1,10 @@
 import pytest
+
 from src.binary_search.last_occurrence import last_occurrence
 
 
 @pytest.mark.parametrize(
-    "arr, target, expected",
+    ("arr", "target", "expected"),
     [
         ([], 3, -1),
         ([2, 3, 5], 1, -1),

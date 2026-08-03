@@ -21,9 +21,9 @@ class Node:
         self.next = next
 
 
-def find_middle_of_linked_list(head: Optional[Node]) -> int:
-    slow: Optional[Node] = head
-    fast: Optional[Node] = head
+def find_middle_of_linked_list(head: Node | None) -> int:
+    slow: Node | None = head
+    fast: Node | None = head
     while fast and fast.next:
         fast = fast.next.next
         if slow and slow.next:

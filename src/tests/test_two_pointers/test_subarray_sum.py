@@ -4,7 +4,7 @@ from src.two_pointers.subarray_sum import subarray_sum_fixed
 
 
 @pytest.mark.parametrize(
-    "nums, k, expected",
+    ("nums", "k", "expected"),
     [
         ([1, 2, 3, 7, 4, 1], 3, 14),
         ([1, 2, 3, 7, 4, 1], 2, 11),

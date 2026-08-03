@@ -4,7 +4,7 @@ from src.two_pointers.consequtive_characters import max_power
 
 
 @pytest.mark.parametrize(
-    "s, expected",
+    ("s", "expected"),
     [
         ("leetcode", 2),
         ("abbcccddddeeeeedcba", 5),

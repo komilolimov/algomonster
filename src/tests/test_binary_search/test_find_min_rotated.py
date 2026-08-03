@@ -1,9 +1,10 @@
 import pytest
+
 from src.binary_search.find_min_rotated import find_min_rotated
 
 
 @pytest.mark.parametrize(
-    "arr, expected",
+    ("arr", "expected"),
     [
         ([30, 40, 50, 10, 20], 3),
         ([3, 5, 7, 11, 13, 17, 19, 2], 7),

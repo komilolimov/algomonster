@@ -1,9 +1,10 @@
 import pytest
+
 from src.binary_search.square_root_estimation import square_root, square_rot
 
 
 @pytest.mark.parametrize(
-    "n, expected",
+    ("n", "expected"),
     [
         (0, 0),
         (1, 1),
