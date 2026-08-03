@@ -1,4 +1,3 @@
-
 # basic binary search algorithm
 
 

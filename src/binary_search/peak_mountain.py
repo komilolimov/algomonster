@@ -1,5 +1,3 @@
-
-
 # 852. Peak Index in a Mountain Array
 # Solved
 # Medium
@@ -12,7 +10,6 @@
 
 # Your task is to solve it in O(log(n)) time complexity.
 
- 
 
 # Example 1:
 
@@ -33,9 +30,6 @@
 # Output: 1
 
 
-
-
-
 class Solution:
     def peakIndexInMountainArray(self, arr: list[int]) -> int:
         left, right = 0, len(arr) - 1
@@ -52,4 +46,4 @@ def peak_index_in_mountain_array(arr: list[int]) -> int:
     return Solution().peakIndexInMountainArray(arr)
 
 
-peakIndexInMountainArray = peak_index_in_mountain_array
+peakIndexInMountainArray = peak_index_in_mountain_array

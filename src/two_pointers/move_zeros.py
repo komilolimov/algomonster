@@ -9,8 +9,6 @@
 # [1, 2, 7, 0, 0, 0]
 
 
-
-
 def move_zeros(nums: list[int]) -> None:
     slow = 0
     for fast in range(len(nums)):

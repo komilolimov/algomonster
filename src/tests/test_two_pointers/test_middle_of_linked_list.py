@@ -1,4 +1,3 @@
-
 import pytest
 
 from src.two_pointers.middle_of_linked_list import Node, find_middle_of_linked_list
