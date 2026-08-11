@@ -1,6 +1,6 @@
 import pytest
 
-from src.sliding_windows.minSubArrayLen import (
+from src.sliding_windows.min_sub_array_len import (
     Solution,
     min_sub_array_len,
     minSubArrayLen,
