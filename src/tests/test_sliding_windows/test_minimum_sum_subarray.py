@@ -8,7 +8,7 @@ from src.sliding_windows.minimum_sum_subarray import (
 
 
 @pytest.mark.parametrize(
-    ("nums", "l", "r", "expected"),
+    ("nums", "left", "r", "expected"),
     [
         ([3, -2, 1, 4], 2, 3, 1),
         ([-2, 2, -3, 1], 2, 3, -1),
@@ -25,15 +25,15 @@ from src.sliding_windows.minimum_sum_subarray import (
 )
 def test_minimum_sum_subarray(
     nums: list[int],
-    l: int,  # noqa: E741
+    left: int,
     r: int,
     expected: int,
 ) -> None:
-    assert minimum_sum_subarray(nums, l, r) == expected
+    assert minimum_sum_subarray(nums, left, r) == expected
 
 
 @pytest.mark.parametrize(
-    ("nums", "l", "r", "expected"),
+    ("nums", "left", "r", "expected"),
     [
         ([3, -2, 1, 4], 2, 3, 1),
         ([-2, 2, -3, 1], 2, 3, -1),
@@ -42,15 +42,15 @@ def test_minimum_sum_subarray(
 )
 def test_minimum_sum_subarray_alias(
     nums: list[int],
-    l: int,  # noqa: E741
+    left: int,
     r: int,
     expected: int,
 ) -> None:
-    assert minimumSumSubarray(nums, l, r) == expected
+    assert minimumSumSubarray(nums, left, r) == expected
 
 
 @pytest.mark.parametrize(
-    ("nums", "l", "r", "expected"),
+    ("nums", "left", "r", "expected"),
     [
         ([3, -2, 1, 4], 2, 3, 1),
         ([-2, 2, -3, 1], 2, 3, -1),
@@ -59,9 +59,9 @@ def test_minimum_sum_subarray_alias(
 )
 def test_solution_class(
     nums: list[int],
-    l: int,  # noqa: E741
+    left: int,
     r: int,
     expected: int,
 ) -> None:
     solution = Solution()
-    assert solution.minimumSumSubarray(nums, l, r) == expected
+    assert solution.minimumSumSubarray(nums, left, r) == expected

@@ -41,9 +41,9 @@
 # -1000 <= nums[i] <= 1000
 
 
-def minimum_sum_subarray(nums: list[int], l: int, r: int) -> int:  # noqa: E741
+def minimum_sum_subarray(nums: list[int], left: int, r: int) -> int:
     min_sum: int | float = float("inf")
-    for k in range(l, r + 1):
+    for k in range(left, r + 1):
         if k > len(nums):
             break
         window_sum = sum(nums[:k])
@@ -61,5 +61,5 @@ minimumSumSubarray = minimum_sum_subarray
 
 
 class Solution:
-    def minimumSumSubarray(self, nums: list[int], l: int, r: int) -> int:  # noqa: E741
-        return minimum_sum_subarray(nums, l, r)
+    def minimumSumSubarray(self, nums: list[int], left: int, r: int) -> int:
+        return minimum_sum_subarray(nums, left, r)
