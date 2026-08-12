@@ -25,9 +25,9 @@ from src.sliding_windows.minimum_sum_subarray import (
 )
 def test_minimum_sum_subarray(
     nums: list[int],
-    l: int,
+    l: int,  # noqa: E741
     r: int,
-    expected: int,  # noqa: E741
+    expected: int,
 ) -> None:
     assert minimum_sum_subarray(nums, l, r) == expected
 
@@ -42,9 +42,9 @@ def test_minimum_sum_subarray(
 )
 def test_minimum_sum_subarray_alias(
     nums: list[int],
-    l: int,
+    l: int,  # noqa: E741
     r: int,
-    expected: int,  # noqa: E741
+    expected: int,
 ) -> None:
     assert minimumSumSubarray(nums, l, r) == expected
 
@@ -59,9 +59,9 @@ def test_minimum_sum_subarray_alias(
 )
 def test_solution_class(
     nums: list[int],
-    l: int,
+    l: int,  # noqa: E741
     r: int,
-    expected: int,  # noqa: E741
+    expected: int,
 ) -> None:
     solution = Solution()
     assert solution.minimumSumSubarray(nums, l, r) == expected
