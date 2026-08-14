@@ -12,6 +12,7 @@ A production-grade Python collection of classic Data Structures & Algorithms, fe
   - [Binary Search](#-binary-search)
   - [Two Pointers](#-two-pointers)
   - [Sliding Windows](#-sliding-windows)
+  - [Depth First Search](#-depth-first-search)
 - [Getting Started](#-getting-started)
   - [Installation](#installation)
   - [Running Unit Tests](#running-unit-tests)
@@ -35,10 +36,12 @@ A production-grade Python collection of classic Data Structures & Algorithms, fe
 algo_portfolio/
 ├── src/
 │   ├── binary_search/             # Binary search patterns and variations
+│   ├── depth_first_search/        # Depth-First Search tree algorithms
 │   ├── two_pointers/              # Two-pointer technique implementations
 │   ├── sliding_windows/           # Fixed and dynamic sliding window patterns
 │   └── tests/                     # Comprehensive pytest test suites
 │       ├── test_binary_search/
+│       ├── test_depth_first_search/
 │       ├── test_two_pointers/
 │       └── test_sliding_windows/
 ├── pyproject.toml                 # Tool configuration for pytest, mypy, and ruff
@@ -72,6 +75,9 @@ algo_portfolio/
 ### 🪟 Sliding Windows (`src/sliding_windows/`)
 - **Minimum Size Subarray Sum**: Minimal length subarray whose sum $\ge$ target (`min_sub_array_len.py`)
 - **Minimum Positive Sum Subarray**: Smallest positive sum of subarray with size between $l$ and $r$ (`minimum_sum_subarray.py`)
+
+### 🌲 Depth First Search (`src/depth_first_search/`)
+- **Tree Max Depth**: Calculating maximum depth (number of edges on longest root-to-leaf path) of a binary tree (`tree_max_depth.py`)
 
 ---
 
