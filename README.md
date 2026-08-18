@@ -63,7 +63,7 @@ algo_portfolio/
 - **Square Root Estimation**: Integer square root calculation via binary search (`square_root_estimation.py`)
 
 ### 👈👉 Two Pointers (`src/two_pointers/`)
-- **3Sum**: Finding all unique triplets summing to zero (`3sum.py`, `three_sum.py`)
+- **3Sum**: Finding all unique triplets summing to zero (`three_sum.py`)
 - **Move Zeros**: In-place array modification preserving relative order (`move_zeros.py`)
 - **Remove Duplicates**: In-place duplicate removal from sorted arrays (`remove_duplicates.py`)
 - **Consecutive Characters**: Longest substring of identical characters (`consequtive_characters.py`)
