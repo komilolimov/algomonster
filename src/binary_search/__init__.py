@@ -1,0 +1,1 @@
+"""Binary search algorithms module."""
